@@ -11,7 +11,7 @@ add_library(lbfgs lbfgs.f)
 
 include(FortranCInterface)
 FortranCInterface_VERIFY(CXX)
-FortranCInterface_HEADER(${PROJECT_SOURCE_DIR}/fc.h MACRO_NAMESPACE "FC_")
+FortranCInterface_HEADER(${PROJECT_SOURCE_DIR}/fc.h MACRO_NAMESPACE "FC_" SYMBOLS lbfgs)
 
 enable_testing()
 
