@@ -1,0 +1,30 @@
+L-BFGS
+
+Software for Large-scale Unconstrained Optimization by Jorge Nocedal
+
+L-BFGS is a limited-memory quasi-Newton code for unconstrained
+optimization. The code has been developed at the Optimization Center,
+a joint venture of Argonne National Laboratory and Northwestern
+University.  Downloading and Installing L-BFGS
+
+The original package includes the following clause:
+
+  Condition for Use: This software is freely available for educational
+  or commercial purposes. We expect that all publications describing
+  work using this software quote at least one of the references given
+  below. This software is released under the BSD License.
+
+References
+
+J. Nocedal. Updating Quasi-Newton Matrices with Limited Storage
+(1980), Mathematics of Computation 35, pp. 773-782.
+
+D.C. Liu and J. Nocedal. On the Limited Memory Method for Large Scale
+Optimization (1989), Mathematical Programming B, 45, 3, pp. 503-528.
+
+---
+
+This is a repackaging of the original code [1] that includes a C/C++
+header file and a CMake-based build system.
+
+[1] http://users.iems.northwestern.edu/~nocedal/lbfgs.html
