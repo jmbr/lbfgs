@@ -9,6 +9,10 @@ set(CMAKE_Fortran_FLAGS "-g -W -Wall -Wno-compare-reals")
 
 add_library(lbfgs lbfgs.f)
 
+include(FortranCInterface)
+FortranCInterface_VERIFY(CXX)
+FortranCInterface_HEADER(${PROJECT_SOURCE_DIR}/fc.h MACRO_NAMESPACE "FC_")
+
 enable_testing()
 
 add_executable(sdrive sdrive.f)
